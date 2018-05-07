@@ -10,6 +10,11 @@ class Post(models.Model):
             default=timezone.now)
     published_date = models.DateTimeField(
             blank=True, null=True)
+    model_pic= models.ImageField(null=True, blank=True, upload_to = "")
+
+
+    def upload_image(self, filename):
+        return 'post/{}/{}'.format(self.title, filename)
 
     def publish(self):
         self.published_date = timezone.now()
@@ -19,7 +24,7 @@ class Post(models.Model):
         return self.title
 
     def approved_comments(self):
-        return self.comments.filter(approved_comment=True)      
+        return self.comments.filter(approved_comment=True)
 
 class Comment(models.Model):
     post = models.ForeignKey('blog.Post', related_name='comments')
