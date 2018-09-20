@@ -1,0 +1,46 @@
+cd djangogirls
+
+
+//установка папок
+python3 -m venv myvenv 
+
+cd djangogirls
+
+//запуск
+C:\Users\Name\djangogirls> python -m venv myvenv
+
+//если не запускается. cmd под админом
+pip install --upgrade pip
+pip install django
+////
+python manage.py runserver
+
+
+////Git
+git status
+git add --all .
+git status
+git commit -m "My Django Girls app, first commit"
+git push
+
+
+///Pythonanywhere
+git clone https://github.com/<your-github-username>/my-first-blog.git
+cd my-first-blog
+virtualenv --python=python3.6 myvenv
+source myvenv/bin/activate
+pip install django
+//
+python manage.py migrate
+//
+python manage.py createsuperuser
+////////////////////////////////////////////
+cd ~/my-first-blog
+git pull
+
+
+
+//////css
+CTRL+F5 обновляет изменение стилей
+
+

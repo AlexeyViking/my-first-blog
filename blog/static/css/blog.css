@@ -5,22 +5,17 @@ h1 a {
 
 
 
-.page-header {
-    background-color: #ff9400;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
-}
+
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
+    color: black;
     font-size: 36pt;
     text-decoration: none;
-    
-}
+    text-align:  center;
+  }
 
 .content {
     margin-left: 40px;
-
 }
 
 h1, h2, h3, h4 {
@@ -40,7 +35,7 @@ h1, h2, h3, h4 {
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
+    color: black;
     float: right;
     font-size: 26pt;
     margin-right: 20px;
